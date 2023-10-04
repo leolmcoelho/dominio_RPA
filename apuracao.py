@@ -2,6 +2,8 @@ from time import sleep
 from date import *
 from dominio import *
 
+
+start_dominio()
 # box = find('fiscal')
 sleep(1)
 # click(box)
@@ -24,9 +26,13 @@ key('tab')
 write(f'{m}/{y}')
 sleep(1)
 key('tab')
+sleep(1)
 write('g')
 # se chegou aqui é porque achou a imagem
+
+fim = find('aviso')
+key('esc')
 fim = find('fim')
 write('n')
-
-print('Terminou a execução')
+key('esc')
+print('Terminou a execução')    

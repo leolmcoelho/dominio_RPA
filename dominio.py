@@ -1,11 +1,12 @@
 import pyautogui
 from time import sleep
 from date import *
-# from start import start
+from start import start
 
-# start()
+#s
+# tart()
 
-
+pyautogui.PAUSE = 0.3
 def find(img, confidence=0.9):
     while 1:
         box = (0, 0, 0, 0)
@@ -71,7 +72,40 @@ def click_custom(box, x_percent, y_percent):
     y = box.top + box.height * y_percent/10
     pyautogui.click(x, y)
 
+
+def start_dominio():
+    
+    start()
+    box = find('fiscal', 0.8)
+    sleep(1)
+    click(box)
+    click(box)
+    login()
+    box = find('escrita', 0.7)
+    click(box)
+    box = find('movimentos', 0.8)
+    click(box)
+    write('r')
+    sleep(1)
+    box = find('movimentos', 0.8)
+    click(box)
+    write('r')
+    sleep(1)
+    
+    y, m  = mes_anterior()
+    write(f'{m}/{y}')
+    key('tab')
+    write(f'{m}/{y}')
+    sleep(1)
+    key('tab')
+    write('g')
+    # se chegou aqui é porque achou a imagem
+    fim = find('fim')
+    write('n')
+
 if __name__ == '__main__':
+    
+        start_dominio()
         # box = find('fiscal')
         sleep(1)
         # click(box)

@@ -3,6 +3,10 @@ from time import sleep
 from date import *
 from dominio import *
 
+from start import start
+
+
+start_dominio()
 key('esc')
 box = find('movimentos', 0.8)
 click(box)
@@ -68,5 +72,3 @@ key()
 
 
 print('Terminou a execução')
-
-
