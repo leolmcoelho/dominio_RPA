@@ -28,7 +28,7 @@ sleep(0.5)
 sleep(0.5)
 write(f'01/{m}/{y}')
 sleep(0.5)
-#
+key('tab')
 write(f'{lasted}/{m}/{y}')
 
 for _ in range(11):
