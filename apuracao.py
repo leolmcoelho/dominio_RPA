@@ -3,7 +3,7 @@ from date import *
 from dominio import *
 
 
-start_dominio()
+#start_dominio()
 # box = find('fiscal')
 sleep(1)
 # click(box)
