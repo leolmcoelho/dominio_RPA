@@ -31,7 +31,7 @@ sleep(0.5)
 key('tab')
 write(f'{lasted}/{m}/{y}')
 
-for _ in range(11):
+for _ in range(10):
     key('tab')
     sleep(0.1)
 write(2)
